@@ -1,0 +1,50 @@
+.card1{
+  width: 100%;
+  position: relative;
+  -webkit-backdrop-filter: blur(120px);
+  backdrop-filter: blur(120px);
+  border-radius: 10px;
+  margin-top: 1%;
+  z-index: 9;
+}
+.marquee{
+  gap: 30px;
+}
+.marquee-container{
+  display: -webkit-flex !important;
+}
+.marqueeimg1{
+    width: 12vw;
+}
+.marqueeimg6{
+  width: 15vw;
+}
+.marqueeimg2{
+    width: 16vw;
+}
+.marqueeimg3{
+  width: 20vw;
+}
+.marqueeimg4{
+  width: 20vw;
+}
+.marqueeimg5{
+  width: 18vw;
+}
+.overlay::before, .overlay::after {
+  display: none;
+}
+.image-link{
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.marquee-container{
+  gap:18%;
+}
+
+@media screen and (max-width: 500px) {
+
+.marquee-container{
+  gap:100%;
+}
+}

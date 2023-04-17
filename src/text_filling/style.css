@@ -1,0 +1,41 @@
+.bannerClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    position: absolute;
+}
+.bannerClass img {
+    width: 100%;
+}
+
+.bannerClass .to{
+    width: 26%;
+position: absolute;
+top: 0;
+left: 45%;
+animation-name: moving_up;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+clip-path: inset(100% 0px 0px 0px);
+}
+
+.parent_banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes moving_up {
+    0%{
+        clip-path: inset(100% 0px 0px 0px);
+    }
+    100%{
+        clip-path: inset(0% 0px 0px 0px);
+    }
+}
+

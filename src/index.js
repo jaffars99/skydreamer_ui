@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './css/index.css';
 import App from './App';
+import { Routes, Route } from 'react-router-dom'
+import { BrowserRouter } from "react-router-dom"
+// import FrontPage from './components/front_page';
 import reportWebVitals from './reportWebVitals';
+
+import Policy from './components/privacyPolicy';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+    <Route path='/' element={<App/>} />
+        <Route path='privacyPolicy' element={<Policy/>} />
+        </Routes>
+   </BrowserRouter>
   </React.StrictMode>
 );
 
